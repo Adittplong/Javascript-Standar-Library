@@ -1,0 +1,14 @@
+{
+  "first": "Aditya",
+  "mid": "Prayoga",
+  "last": "Suarman",
+  "address": { 
+        "country": "Indonesia", 
+        "city": "Depok" 
+    },
+  "hobbies": [
+        "Coding", 
+        "Game", 
+        "Rebahan"
+    ]
+}

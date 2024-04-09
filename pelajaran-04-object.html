@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        {
+            //object seal dan freeze
+            const person = {
+            first : "Aditya",
+            last : "Prayoga"
+        };
+
+        // Object.freeze(person);
+        Object.seal(person);
+
+        person.first = "Aditya";
+        person.middle = "Suarman"; // tidak bisa diubah dan dihapus
+        delete person.last;
+
+        console.info(person);
+    }
+
+    {
+        const target = {first : "Aditya"};
+        const source = {
+            last : "Prayoga"
+        };
+
+        Object.assign(target, source);
+        console.info(target);
+        console.info (source);
+    }
+
+    {
+        const person = {
+            first : "Aditya",
+            last : "Prayoga"
+        }
+
+        console.info(Object.values(person));
+        console.info(Object.getOwnPropertyNames(person));
+    }
+    </script>
+</body>
+</html>

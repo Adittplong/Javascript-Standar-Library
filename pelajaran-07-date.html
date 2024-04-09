@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+       { 
+            //create date
+            const date1 = new Date();
+            console.info(date1);
+
+            const date2 = new Date(2024, 4, 10);
+            console.info(date2);
+
+            const date3 = new Date(2020, 10, 10, 1, 0, 0, 0);
+            console.info(date3);
+
+            const date4 = new Date(1985742);
+            console.info(date4)
+        }
+
+        {   
+            //epoch dan unit time stamp
+            const date1 = new Date();
+            console.info(date1.getTime());
+
+            const date2 = new Date(2024, 4, 10);
+            console.info(date2.getTime());
+
+            const date3 = new Date(2020, 10, 10, 1, 0, 0, 0);
+            console.info(date3.getTime());
+
+            const date4 = new Date(123123123123123);
+            console.info(date4.getTime());
+
+            console.info(Date.now());
+        }
+
+        {
+            //Parsing Date
+            
+            const time = Date.parse("2024-04-20");
+            console.info(time);
+
+            const date = new Date(time);
+            console.info(date)
+
+        }
+
+        {
+            //date Getter dan setter
+            const date = new Date();
+            date.setFullYear(1997);
+
+            console.info(date.getFullYear());
+            console.info(date.getMonth());
+            console.info(date.getDate());
+            console.info(date.getHours());
+            console.info(date.getMinutes());
+            console.info(date.getSeconds());
+            console.info(date.getMilliseconds());
+            console.info(date.getTimezoneOffset());
+        }
+
+        
+    </script>
+</body>
+</html>
